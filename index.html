@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kerala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 md:px-16 flex justify-between items-center h-[65px]">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <span class="text-[22px]">🌴</span>
+      <h1 class="text-[18px] font-bold tracking-widest text-[#2d4a32]">KERALA</h1>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-8 text-[11px] tracking-widest font-medium text-gray-600">
+      <li><a href="#landscapes" class="hover:text-[#2d4a32]">LANDSCAPES</a></li>
+      <li><a href="#hillstations" class="hover:text-[#2d4a32]">HILL STATIONS</a></li>
+      <li><a href="#beaches" class="hover:text-[#2d4a32]">BEACHES</a></li>
+      <li><a href="#waterfalls" class="hover:text-[#2d4a32]">WATERFALLS</a></li>
+      <li><a href="#wildlife" class="hover:text-[#2d4a32]">WILDLIFE</a></li>
+      <li><a href="#gallery" class="hover:text-[#2d4a32]">GALLERY</a></li>
+    </ul>
+
+    <!-- Button -->
+    <div class="hidden md:block">
+      <a href="#places" class="bg-[#2d4a32] text-white text-[10px] tracking-widest px-6 py-2.5 rounded-full">EXPLORE</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden text-[22px]">☰</button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white px-6 pb-6">
+    <ul class="flex flex-col gap-4 text-[11px] tracking-widest text-gray-600 pt-4">
+      <li><a href="#landscapes">🌴 LANDSCAPES</a></li>
+      <li><a href="#hillstations">🏞️ HILL STATIONS</a></li>
+      <li><a href="#beaches">🌊 BEACHES</a></li>
+      <li><a href="#waterfalls">💧 WATERFALLS</a></li>
+      <li><a href="#wildlife">🐘 WILDLIFE</a></li>
+      <li><a href="#gallery">🍃 GALLERY</a></li>
+      <li><a href="#places">📍 PLACES</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.onclick = () => menu.classList.toggle('hidden');
+</script> 
+<!-- 2. 🌴 KERALA LANDSCAPES - CUSTOM -->
+<section id="landscapes" class="py-16 md:py-28 px-6 md:px-16 bg-[#fdfaf3]">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Title -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+      <div>
+        <p class="text-[11px] tracking-[5px] text-[#2d4a32]/60">NATURE OF KERALA</p>
+        <h2 class="text-[34px] md:text-[48px] text-[#2d4a32] leading-none mt-2">Kerala<br>Landscapes</h2>
+      </div>
+      <p class="text-[13px] text-gray-500 max-w-sm leading-relaxed"></p>
+    </div>
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-5 mt-10">
+
+      <!-- 1. Paddy Fields -->
+      <div class="group bg-white rounded-[24px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+        <div class="relative h-[260px] overflow-hidden">
+          <img src="image/photo-1.jpg" class="h-full w-full object-cover group-hover:scale-110 transition duration-700">
+          <div class="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-[10px] tracking-widest">PADDY FIELDS</div>
+        </div>
+        <div class="p-5">
+          <h3 class="text-[16px] font-semibold text-[#2d4a32]">Vayalukal</h3>
+          <p class="text-[12px] text-gray-500 mt-1 leading-relaxed">Kuttanad, Palakkad vayalukal - Kerala nte nellara.</p>
+          <p class="text-[11px] text-[#2d4a32] mt-3 font-medium">📍 Kuttanad, Palakkad, Thrissur</p>
+        </div>
+      </div>
+
+      <!-- 2. Backwaters -->
+      <div class="group bg-white rounded-[24px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+        <div class="relative h-[260px] overflow-hidden">
+          <img src="image/photo-2.jpg" class="h-full w-full object-cover group-hover:scale-110 transition duration-700">
+          <div class="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-[10px] tracking-widest">BACKWATERS</div>
+        </div>
+        <div class="p-5">
+          <h3 class="text-[16px] font-semibold text-[#2d4a32]">Kayalukal</h3>
+          <p class="text-[12px] text-gray-500 mt-1 leading-relaxed">Houseboat, shanthamaya vellam, thuzhachil.</p>
+          <p class="text-[11px] text-[#2d4a32] mt-3 font-medium">📍 Alleppey, Kumarakom, Ashtamudi</p>
+        </div>
+      </div>
+      <div class="group bg-white rounded-[24px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+        <div class="relative h-[260px] overflow-hidden">
+          <img src="image/photo-3.jpg" class="h-full w-full object-cover group-hover:scale-110 transition duration-700">
+          <div class="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-[10px] tracking-widest">GREEN VILLAGES</div>
+        </div>
+        <div class="p-5">
+          <h3 class="text-[16px] font-semibold text-[#2d4a32]">Haritha Gramangal</h3>
+          <p class="text-[12px] text-gray-500 mt-1 leading-relaxed">Peaceful, green, simple village life.</p>
+          <p class="text-[11px] text-[#2d4a32] mt-3 font-medium">📍 Wayanad, Idukki, Pathanamthitta</p>
+        </div>
+      </div>
+      
+      <div class="group bg-white rounded-[24px] overflow-hidden shadow-sm hover:shadow-xl transition duration-500">
+        <div class="relative h-[260px] overflow-hidden">
+          <img src="image/photo-4.jpg" class="h-full w-full object-cover group-hover:scale-110 transition-700">
+          <div class="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-[10px] tracking-widest">COCONUT TREES</div>
+        </div>
+        <div class="p-5">
+          <h3 class="text-[16px] font-semibold text-[#2d4a32]">Thengu Thoppukal</h3>
+          <p class="text-[12px] text-gray-500 mt-1 leading-relaxed">kerala nadu coconut trees everywhere.</p>
+          <p class="text-[11px] text-[#2d4a32] mt-3 font-medium">📍Everywhere in kerala</p>
+        </div>
+      </div>
+      
+
+    </div>
+
+    
+    <div class="mt-12 bg-[#2d4a32] rounded-[24px] p-8 md:p-10 flex flex-col md:flex-row justify-between items-center gap-4 text-white">
+      <p class="text-[14px] md:text-[18px] italic">"Keralam - pachappu niranja oru swapna bhoomi 🌿"</p>
+      <div class="flex gap-3 text-[11px]">
+        <span class="bg-white/20 px-4 py-2 rounded-full">PADDY</span>
+        <span class="bg-white/20 px-4 py-2 rounded-full">KAYAL</span>
+        <span class="bg-white/20 px-4 py-2 rounded-full">THENGU</span>
+        <span class="bg-white/20 px-4 py-2 rounded-full">GRAMAM</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- 3. 🏞️ HILL STATIONS - VARIETY CARDS -->
+<section id="hillstations" class="py-16 md:py-28 px-6 md:px-16 bg-[#f6fbf6]">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Header -->
+    <div class="flex justify-between items-end">
+      <div>
+        <p class="text-[11px] tracking-[5px] text-[#2d4a32]/60">MISTY MOUNTAINS</p>
+        <h2 class="text-[34px] md:text-[48px] text-[#2d4a32] mt-2 leading-none">Hill Stations</h2>
+      </div>
+      <p class="hidden md:block text-[13px] text-gray-500 max-w-xs">Munnar muthal Thekkady vare - kulirum manjum niranja malanirakal.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 mt-10">
+
+      <!-- 1. MUNNAR - BIG CARD -->
+      <div class="md:col-span-7 group relative h-[380px] rounded-[30px] overflow-hidden">
+        <img src="image/munnar.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+        <div class="absolute top-5 left-5 bg-white px-4 py-1.5 rounded-full text-[10px] tracking-widest">MOST POPULAR</div>
+        <div class="absolute bottom-0 p-7 text-white">
+          <h3 class="text-[28px] font-bold">Munnar</h3>
+          <p class="text-[12px] opacity-80 mt-1">1600m above sea level • Tea gardens unlimited • Honeymoon spot</p>
+          <div class="flex gap-2 mt-3"><span class="bg-white/20 px-3 py-1 rounded-full text-[10px]">TEA MUSEUM</span><span class="bg-white/20 px-3 py-1 rounded-full text-[10px]">ECHO POINT</span><span class="bg-white/20 px-3 py-1 rounded-full text-[10px]">TOP STATION</span></div>
+        </div>
+      </div>
+
+      
+      <div class="md:col-span-5 group bg-white rounded-[30px] p-4 shadow-sm hover:shadow-xl transition-all">
+        <div class="relative h-[220px] rounded-[20px] overflow-hidden">
+          <img src="image/wayanad.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+          <div class="absolute bottom-3 left-3 bg-[#2d4a32] text-white px-3 py-1 rounded-full text-[10px]">WILD & MISTY</div>
+        </div>
+        <div class="p-3 pt-5">
+          <h3 class="text-[20px] font-bold text-[#2d4a32]">Wayanad</h3>
+          <p class="text-[12px] text-gray-500 mt-1">Kuruva Island, Edakkal Caves, Banasura Dam - forest nte ullil.</p>
+          <div class="flex justify-between items-center mt-4"><span class="text-[11px] text-gray-400"></span><span class="text-[11px] font-bold text-[#2d4a32]">EXPLORE →</span></div>
+        </div>
+      </div>
+
+      
+      <div class="md:col-span-5 group relative h-[320px] rounded-[30px] overflow-hidden">
+        <img src="image/Vagamon-1.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Vagamon Meadows">
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+        <div class="absolute top-5 left-5 right-5 flex justify-between">
+          <span class="bg-white px-3 py-1 rounded-full text-[10px] tracking-widest">HIDDEN GEM</span>
+          <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] text-white">⛰️ VAGAMON</span>
+        </div>
+
+        <div class="absolute bottom-0 p-7 text-white w-full">
+          <h3 class="text-[32px] leading-none">Vagamon</h3>
+          <p class="text-[12px] opacity-80 mt-1">Paragliding • Pine forest • Meadows</p>
+          <div class="mt-3 flex gap-2">
+            <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px]">PINE VALLEY</span>
+            <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px]">MEADOWS</span>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="md:col-span-7 group bg-white rounded-[30px] overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col md:flex-row">
+        <div class="md:w-[45%] h-[250px] md:h-auto relative overflow-hidden">
+          <img src="image/thekkady.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+        </div>
+        <div class="md:w-[55%] p-7">
+          <h3 class="text-[24px] font-bold text-[#2d4a32]">Thekkady</h3>
+          <p class="text-[11px] tracking-widest text-gray-400 mt-1">SPICE & WILDLIFE</p>
+          <div class="mt-5 space-y-3">
+            <div class="flex items-center gap-3"><span class="w-8 h-8 bg-[#edf5ec] rounded-full flex items-center justify-center text-[14px]">🐘</span><div><p class="text-[12px] font-medium">Periyar Wildlife</p><p class="text-[10px] text-gray-400">Boat safari in lake</p></div></div>
+            <div class="flex items-center gap-3"><span class="w-8 h-8 bg-[#edf5ec] rounded-full flex items-center justify-center text-[14px]">🌿</span><div><p class="text-[12px] font-medium">Spice Plantation</p><p class="text-[10px] text-gray-400">Cardamom, Pepper, Clove</p></div></div>
+            <div class="flex items-center gap-3"><span class="w-8 h-8 bg-[#edf5ec] rounded-full flex items-center justify-center text-[14px]">🎋</span><div><p class="text-[12px] font-medium">Bamboo Rafting</p><p class="text-[10px] text-gray-400">Adventure in forest</p></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="beaches" class="py-16 px-6 max-w-6xl mx-auto">
+
+  <div class="flex justify-between items-end">
+    <div>
+      <p class="text-[11px] tracking-[5px] text-blue-600/60">kerala beaches</p>
+      <h2 class="text-[34px] font-bold leading-none mt-1">Beaches</h2>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-12 gap-4 mt-8">
+
+    
+    <article class="md:col-span-7 bg-[#0f2f3f] text-white rounded-[24px] p-6 h-[280px] flex flex-col justify-between relative overflow-hidden">
+      <div class="absolute -right-10 -top-10 w-[200px] h-[200px] bg-white/10 rounded-full"></div>
+      <div>
+        <span class="bg-white text-black px-3 py-1 rounded-full text-[10px] tracking-widest">CLIFF BEACH • MOST FAMOUS</span>
+        <h3 class="text-[30px] font-bold mt-4">Varkala</h3>
+        <p class="text-[12px] opacity-70">North Cliff • Papanasam beach</p>
+      </div>
+      <div class="flex gap-2">
+        <span class="bg-white/20 px-3 py-1 rounded-full text-[10px]">CLIFF VIEW</span>
+        <span class="bg-white/20 px-3 py-1 rounded-full text-[10px]">SUNSET</span>
+        <span class="bg-white/20 px-3 py-1 rounded-full text-[10px]">YOGA</span>
+      </div>
+    </article>
+
+    
+    <article class="md:col-span-5 bg-white border rounded-[24px] p-5 h-[280px] flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between">
+          <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-[10px]">LIGHTHOUSE BEACH</span>
+          <span class="text-[20px]">🏖️</span>
+        </div>
+        <h3 class="text-[26px] font-bold mt-4">Kovalam</h3>
+        <p class="text-[12px] text-gray-500 mt-1">Trivandrum nte aduth, crescent shape 3 beaches.</p>
+      </div>
+      <div class="flex justify-between items-center">
+        <span class="text-[11px] text-gray-400">📍 16km from Tvm</span>
+        <span class="text-[11px] font-bold">EXPLORE →</span>
+      </div>
+    </article>
+
+    
+    <article class="md:col-span-5 bg-[#fdfaf3] border rounded-[24px] p-6 h-[260px] flex flex-col justify-between">
+      <div>
+        <div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center text-[18px]">🏰</div>
+        <h3 class="text-[24px] font-bold mt-4">Bekal</h3>
+        <p class="text-[11px] tracking-widest text-gray-400 mt-1">FORT + BEACH COMBO</p>
+      </div>
+      <div>
+        <p class="text-[12px] text-gray-600">Kasaragod il, Bekal Fort nte chuttum kadal - super clean & less crowd.</p>
+        <div class="mt-3 flex gap-2">
+          <span class="border px-3 py-1 rounded-full text-[10px]">FORT</span>
+          <span class="border px-3 py-1 rounded-full text-[10px]">BOAT</span>
+        </div>
+      </div>
+    </article>
+    <article class="md:col-span-7 bg-[#e8f5e9] rounded-[24px] p-6 h-[260px] flex flex-col md:flex-row gap-6 items-center">
+      <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-[36px] shrink-0">🐬</div>
+      <div class="flex-1">
+        <h3 class="text-[24px] font-bold">Cherai</h3>
+        <p class="text-[11px] tracking-widest text-gray-500 mt-1">DOLPHIN BEACH • KOCHI</p>
+        <div class="mt-4 space-y-2">
+          <div class="flex gap-2 items-center"><span class="w-6 h-6 bg-white rounded-full flex items-center justify-center text-[10px]">✓</span><p class="text-[12px]">10km long beach - longest in Kochi</p></div>
+          <div class="flex gap-2 items-center"><span class="w-6 h-6 bg-white rounded-full flex items-center justify-center text-[10px]">✓</span><p class="text-[12px]">Backwater + Sea same place</p></div>
+          <div class="flex gap-2 items-center"><span class="w-6 h-6 bg-white rounded-full flex items-center justify-center text-[10px]">✓</span><p class="text-[12px]">Best for swimming</p></div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="waterfalls" class="py-16 px-6 md:px-16 bg-white">
+
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-[30px] font-bold"> Waterfalls</h2>
+    <p class="text-[13px] text-gray-500 mt-1">Kerala's top 4 waterfalls</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-8">
+
+    
+      <div class="group">
+        <img src="image/water-1.jpg"  class="w-full h-[220px] object-cover rounded-2xl group-hover:scale-[1.02] transition">
+        <h3 class="font-bold text-[16px] mt-3">Athirappilly</h3>
+        <p class="text-[12px] text-gray-500">Thrissur • 80ft</p>
+      </div>
+
+      
+      <div class="group">
+        <img src="image/water-2.jpg" class="w-full h-[220px] object-cover rounded-2xl group-hover:scale-[1.02] transition">
+        <h3 class="font-bold text-[16px] mt-3">Meenmutty</h3>
+        <p class="text-[12px] text-gray-500">Wayanad • 300m</p>
+      </div>
+
+      <!-- 3. Soochipara -->
+      <div class="group">
+        <img src="image/water-3.jpg" alt="Soochipara" class="w-full h-[220px] object-cover rounded-2xl group-hover:scale-[1.02] transition">
+        <h3 class="font-bold text-[16px] mt-3">Soochipara</h3>
+        <p class="text-[12px] text-gray-500">Wayanad • Pool bath</p>
+      </div>
+
+      <!-- 4. Thusharagiri -->
+      <div class="group">
+        <img src="image/View-Of-Thusharagiri-Waterfalls-1.jpg" class="w-full h-[220px] object-cover rounded-2xl group-hover:scale-[1.02] transition">
+        <h3 class="font-bold text-[16px] mt-3">Thusharagiri</h3>
+        <p class="text-[12px] text-gray-500">Kozhikode • 3 falls</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 5. 🎉 KERALA FESTIVALS - FIGURE - 4 IN A ROW -->
+<section id="festivals" class="py-16 px-6 md:px-16 bg-white">
+
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-[30px] font-bold">🎉 Kerala Festivals</h2>
+    <p class="text-[13px] text-gray-500 mt-1">God's Own Country nte periya festivals</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-8">
+
+      
+      <figure class="m-0 group">
+        <img src="image/onam.jpeg" alt="Onam Festival Kerala" class="w-full h-[220px] object-cover rounded-2xl group-hover:scale-[1.02] transition">
+        <figcaption class="mt-3">
+          <h3 class="font-bold text-[16px]">Onam</h3>
+          <p class="text-[12px] text-gray-500">Aug-Sep • State Festival</p>
+        </figcaption>
+      </figure>
+
+      
+      <figure class="m-0 group">
+        <img src="image/thrissur pooram.jpeg" class="w-full h-[220px] object-cover rounded-2xl group-hover:scale-[1.02] transition">
+        <figcaption class="mt-3">
+          <h3 class="font-bold text-[16px]">Thrissur Pooram</h3>
+          <p class="text-[12px] text-gray-500">Thrissur • Elephant Fest</p>
+        </figcaption>
+      </figure>
+
+      
+      <figure class="m-0 group">
+        <img src="image/theyyam.jpeg" class="w-full h-[220px] object-cover rounded-2xl group-hover:scale-[1.02] transition">
+        <figcaption class="mt-3">
+          <h3 class="font-bold text-[16px]">Theyyam</h3>
+          <p class="text-[12px] text-gray-500">Kannur • Fire Dance</p>
+        </figcaption>
+      </figure>
+
+    
+      <figure class="m-0 group">
+        <img src="image/vishu.jpeg" class="w-full h-[220px] object-cover rounded-2xl group-hover:scale-[1.02] transition">
+        <figcaption class="mt-3">
+          <h3 class="font-bold text-[16px]">Vishu</h3>
+          <p class="text-[12px] text-gray-500">Kerala . vishu celebration</p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+
+</section>
+
+    
+
+    
+</body>
+</html>
